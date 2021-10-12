@@ -1,0 +1,16 @@
+{
+  "auth-sls-rest-api": {
+    "api-id": "l5pxgiqh3a",
+    "api-resource-id": "s43cq2lx2d",
+    "base-url": "https://sly.scaffoldly-demo.scaffoldly.live/auth",
+    "service-name": "auth-sls-rest-api",
+    "service-slug": "auth"
+  },
+  "cool-sls-rest-api": {
+    "api-id": "n56sx3dv43",
+    "api-resource-id": "sha57cpg59",
+    "base-url": "https://sly.scaffoldly-demo.scaffoldly.live/cool",
+    "service-name": "cool-sls-rest-api",
+    "service-slug": "cool"
+  }
+}
