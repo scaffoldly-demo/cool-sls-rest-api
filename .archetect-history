@@ -1,0 +1,3 @@
+1335173522:
+  source: 'https://github.com/scaffoldly/archetype-express-serverless-rest-api.git#1.0.0-39'
+  options: ' -s overwrite -s github -s serverless -s entity -a repository-name=cool-sls-rest-api -a persistence=dynamodb -a entities=example -a auth=true'
