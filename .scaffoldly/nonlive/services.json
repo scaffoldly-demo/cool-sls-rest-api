@@ -11,6 +11,8 @@
     "api-resource-id": "e7fpze392j",
     "base-url": "https://sly.scaffoldly-demo.scaffoldly.dev/cool",
     "service-name": "cool-sls-rest-api",
-    "service-slug": "cool"
+    "service-slug": "cool",
+    "websocket-api-id": "1pobq2nmih",
+    "websocket-url": "wss://1pobq2nmih.execute-api.us-east-1.amazonaws.com/nonlive"
   }
 }
