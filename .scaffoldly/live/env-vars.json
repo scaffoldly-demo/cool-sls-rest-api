@@ -1,5 +1,7 @@
 {
   "api-gateway-domain": "sly.scaffoldly-demo.scaffoldly.live",
+  "api-gateway-websocket-domain": null,
+  "api-gateway-websocket-domain-id": null,
   "stage-domain": "scaffoldly-demo.scaffoldly.live",
   "subdomain": "sly",
   "subdomain-suffix": "",
