@@ -13,6 +13,6 @@
     "service-name": "cool-sls-rest-api",
     "service-slug": "cool",
     "websocket-api-id": "2bmtuhuqhk",
-    "websocket-url": "wss://wss://ws-sly.scaffoldly-demo.scaffoldly.live/cool"
+    "websocket-url": "wss://ws-sly.scaffoldly-demo.scaffoldly.live/cool"
   }
 }
