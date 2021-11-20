@@ -1,5 +1,6 @@
 {
   "api-gateway-domain": "sly.scaffoldly-demo.scaffoldly.dev",
+  "api-gateway-websocket": true,
   "api-gateway-websocket-domain": "ws-sly.scaffoldly-demo.scaffoldly.dev",
   "api-gateway-websocket-domain-id": "ws-sly.scaffoldly-demo.scaffoldly.dev",
   "stage-domain": "scaffoldly-demo.scaffoldly.dev",
