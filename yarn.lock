@@ -10,6 +10,16 @@
     d "1"
     es5-ext "^0.10.47"
 
+"@aws-sdk/service-error-classification@^3.4.1":
+  version "3.40.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/service-error-classification/-/service-error-classification-3.40.0.tgz#c98cbb781bd50e5d90649742ff954d754201c44d"
+  integrity sha512-c8btKmkvjXczWudXubGdbO3JgmjySBUVC/gCrZDNfwNGsG8RYJJQYYcnmt1gWjelUZsgMDl/2PIzxTlxVF91rA==
+
+"@aws-sdk/types@^3.4.1":
+  version "3.40.0"
+  resolved "https://registry.yarnpkg.com/@aws-sdk/types/-/types-3.40.0.tgz#a9d7926fcb9b699bc46be975033559d2293e60d1"
+  integrity sha512-KpILcfvRaL88TLvo3SY4OuCCg90SvcNLPyjDwUuBqiOyWODjrKShHtAPJzej4CLp92lofh+ul0UnBfV9Jb/5PA==
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -1529,10 +1539,10 @@
     uri-js "^4.4.1"
     yargs "^17.0.1"
 
-"@scaffoldly/serverless-util@^4.0.7":
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/@scaffoldly/serverless-util/-/serverless-util-4.0.7.tgz#c3978f6fccd269180fa1e5ab55cda884e86e9c5b"
-  integrity sha512-6oU7iKfZ0i927I4AeKkieStX7RUV618FQiM5KTjJu1KuuzP0H4/knxoi/+ehkmXfIhkVU1BK79JvTcRtAnc+5Q==
+"@scaffoldly/serverless-util@^4.0.23":
+  version "4.0.23"
+  resolved "https://registry.yarnpkg.com/@scaffoldly/serverless-util/-/serverless-util-4.0.23.tgz#9c6ef392f34302699d3b1665110c9c8609750db8"
+  integrity sha512-bHQiN2Nz8n5r5QOE0Zkn9gXdEzFaJ4/k6+Ev/NSgUiZtVtl70727JeDj6wCB3t31HRv0EVoJdJZQFDQDv2GaUA==
   dependencies:
     "@scaffoldly/dynamodb" "^1.3.1"
     "@types/cors" "^2.8.10"
@@ -1540,8 +1550,8 @@
     "@types/jest" "^25.1.3"
     "@types/node" "^14.0.5"
     "@types/uuid" "^8.0.0"
-    aws-sdk "^2.682.0"
-    aws-xray-sdk "^3.2.0"
+    aws-sdk "^2.1023.0"
+    aws-xray-sdk "^3.3.3"
     axios "^0.21.4"
     boolean "^3.1.4"
     cors "^2.8.5"
@@ -1996,7 +2006,7 @@
   resolved "https://registry.yarnpkg.com/@types/caseless/-/caseless-0.12.2.tgz#f65d3d6389e01eeb458bd54dc8f52b95a9463bc8"
   integrity sha512-6ckxMjBBD8URvjB6J3NcnuAn5Pkl7t3TizAg+xdlzzQGSPSmBcXf8KoIH0ua/i+tio+ZRUHEXp0HEmvaR4kt0w==
 
-"@types/cls-hooked@*":
+"@types/cls-hooked@^4.3.3":
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/@types/cls-hooked/-/cls-hooked-4.3.3.tgz#c09e2f8dc62198522eaa18a5b6b873053154bd00"
   integrity sha512-gNstDTb/ty5h6gJd6YpSPgsLX9LmRpaKJqGFp7MRlYxhwp4vXXKlJ9+bt1TZ9KbVNXE+Mbxy2AYXcpY21DDtJw==
@@ -3096,10 +3106,10 @@ atomic-batcher@^1.0.2:
   resolved "https://registry.yarnpkg.com/atomic-batcher/-/atomic-batcher-1.0.2.tgz#d16901d10ccec59516c197b9ccd8930689b813b4"
   integrity sha1-0WkB0QzOxZUWwZe5zNiTBom4E7Q=
 
-aws-sdk@^2.682.0, aws-sdk@^2.756.0:
-  version "2.863.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.863.0.tgz#602d244a947ce31c8d84de73f9a5b74e7cb95f5b"
-  integrity sha512-krr0047EOl9qpRdhPoyYxI7+viVUpX+t+Vjbf+alXdOE172DC+hFi8y6egIM1xVV4KkMFm0y0EykBWgA93XNNA==
+aws-sdk@^2.1023.0:
+  version "2.1033.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1033.0.tgz#8bd0084142b15cc2ca427483c36c86b27abc046b"
+  integrity sha512-cgcjiuR82bhfBWTffqt6e9+Cn/UgeC6QPQTrlJy3GxwPxChthyrt/h5pekj2l4PLFvETsG10Y6CqQysJEMsncw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3115,6 +3125,21 @@ aws-sdk@^2.7.0:
   version "2.759.0"
   resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.759.0.tgz#de4029dd6c804dd9e5570728e9206a103ddf9935"
   integrity sha512-XTmt6b8NfluqmixO18Bu9ZttZMW9rwEDVO+XITsIQ5dZvLectwrjlbEn2refudJI1Y2pxLguw+tABvXi1wtbbQ==
+  dependencies:
+    buffer "4.9.2"
+    events "1.1.1"
+    ieee754 "1.1.13"
+    jmespath "0.15.0"
+    querystring "0.2.0"
+    sax "1.2.1"
+    url "0.10.3"
+    uuid "3.3.2"
+    xml2js "0.4.19"
+
+aws-sdk@^2.756.0:
+  version "2.863.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.863.0.tgz#602d244a947ce31c8d84de73f9a5b74e7cb95f5b"
+  integrity sha512-krr0047EOl9qpRdhPoyYxI7+viVUpX+t+Vjbf+alXdOE172DC+hFi8y6egIM1xVV4KkMFm0y0EykBWgA93XNNA==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3146,48 +3171,48 @@ aws-sign2@~0.7.0:
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.7.0.tgz#b46e890934a9591f2d2f6f86d7e6a9f1b3fe76a8"
   integrity sha1-tG6JCTSpWR8tL2+G1+ap8bP+dqg=
 
-aws-xray-sdk-core@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/aws-xray-sdk-core/-/aws-xray-sdk-core-3.2.0.tgz#45421ec5f11824e4fcac9cdc868eb2421af9df45"
-  integrity sha512-6mhqmRsQbDAISyKQuYguO38AhHgGSZsmYLVUYWUV9eJ+GiHZf08apwM7fSdiRw56qCulgSTV5JG2/cnPmtBhUA==
+aws-xray-sdk-core@3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/aws-xray-sdk-core/-/aws-xray-sdk-core-3.3.4.tgz#9530fe557b0cb5324b26273e33dcc71036017d64"
+  integrity sha512-GGnYAQgtclLHIBReOtsUgbDDCar0LR2TaHCWlQhPrEVVayrSAZQ4y+SlXN5YIadxMec4/f5dbF69wMbug9D5Ww==
   dependencies:
-    "@types/cls-hooked" "*"
+    "@aws-sdk/service-error-classification" "^3.4.1"
+    "@aws-sdk/types" "^3.4.1"
+    "@types/cls-hooked" "^4.3.3"
     atomic-batcher "^1.0.2"
     cls-hooked "^4.2.2"
-    pkginfo "^0.4.0"
     semver "^5.3.0"
 
-aws-xray-sdk-express@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/aws-xray-sdk-express/-/aws-xray-sdk-express-3.2.0.tgz#cad3681cc51ac66001b38861c2dfb1dd0a129491"
-  integrity sha512-r0XX/2JmIYES1vUYee6MgmXpAc2Ru86S8J8u5kwOvTGT1hKqJcdPF8GSKocPKqCw1KSRvDOWqwkwJu8/mDl9Ew==
+aws-xray-sdk-express@3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/aws-xray-sdk-express/-/aws-xray-sdk-express-3.3.4.tgz#d05ccde5e6f18d73c1e975ab0ebc79cb084b9f7f"
+  integrity sha512-KHglcAVBW4AygcBui9MSP0XS9+LC9vIpNWcfbDvVwJOB7BjQo3Uvkl+RlvDj/R4jrN/hWXfK40xp6R9GH5B1gQ==
   dependencies:
     "@types/express" "*"
 
-aws-xray-sdk-mysql@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/aws-xray-sdk-mysql/-/aws-xray-sdk-mysql-3.2.0.tgz#3ca8a1401d7ed8abcafe2befa1e881547b012435"
-  integrity sha512-MlX5ngtQseoSCU04gJGqOh3hFDv8+J6qrgeuaTJqIrSy7X8Rsz4bXZessjLfyuuAWGXsDrwquj5lpBU8jvoHuw==
+aws-xray-sdk-mysql@3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/aws-xray-sdk-mysql/-/aws-xray-sdk-mysql-3.3.4.tgz#6c801769c0ad8d70009b146bae9ddcc1a9b88c7a"
+  integrity sha512-RLrXLHecQdtun+Oe006f4Dg9/gyg6f8xcP6iBJMfwKI/06QCMUR6hErLPwOLsgpic4rm6AVEsTd5XQg/xdkwsQ==
   dependencies:
     "@types/mysql" "*"
 
-aws-xray-sdk-postgres@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/aws-xray-sdk-postgres/-/aws-xray-sdk-postgres-3.2.0.tgz#b6804d674d24de41c51a71c76777c674e8d5a70a"
-  integrity sha512-Xg3X7Wi6TLEjfLXsPwep9sbTbCn1iqYAV6G4+5jQT4VOE+nn6xa7NntewtxWdvfn77awk4Rb8tQ11ftJOMfTrA==
+aws-xray-sdk-postgres@3.3.4:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/aws-xray-sdk-postgres/-/aws-xray-sdk-postgres-3.3.4.tgz#9b14e993e5ffcabca60af0f9cf381322d27e8ef5"
+  integrity sha512-A4TDWHQEU1hZdChP0BrXx2oiDaatULgMTaKNpZLtpuGmnkQ2oVx11hsCbjVgZsQxJvL2x8weFIGJyhKoQQ84vw==
   dependencies:
     "@types/pg" "*"
 
-aws-xray-sdk@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/aws-xray-sdk/-/aws-xray-sdk-3.2.0.tgz#0c8638ae30d80e460e9f6c9b3d160bf9c8b5e3a1"
-  integrity sha512-ARPagVVljHbad8lVsUVRCQrbPERIjb/itEZBgDyyGufHU/kLZ4XvhG0Vocixyrweo7PMCukGyPvSmKyBqbSxiQ==
+aws-xray-sdk@^3.3.3:
+  version "3.3.4"
+  resolved "https://registry.yarnpkg.com/aws-xray-sdk/-/aws-xray-sdk-3.3.4.tgz#f8fd0ae00c41b0a0f84249911095374d1e337ba5"
+  integrity sha512-687fHnqLiHkzqvwot4mFnhKUiBSOimOoLEoZ/NCRBwrLN1lhtd6TD5QEr7o7GmMfOcwfcuEJGqZE1X3cLkDovA==
   dependencies:
-    aws-xray-sdk-core "3.2.0"
-    aws-xray-sdk-express "3.2.0"
-    aws-xray-sdk-mysql "3.2.0"
-    aws-xray-sdk-postgres "3.2.0"
-    pkginfo "^0.4.0"
+    aws-xray-sdk-core "3.3.4"
+    aws-xray-sdk-express "3.3.4"
+    aws-xray-sdk-mysql "3.3.4"
+    aws-xray-sdk-postgres "3.3.4"
 
 aws4@^1.8.0:
   version "1.10.1"
@@ -10428,11 +10453,6 @@ pkg-up@^3.1.0:
   integrity sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==
   dependencies:
     find-up "^3.0.0"
-
-pkginfo@^0.4.0:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.1.tgz#b5418ef0439de5425fc4995042dced14fb2a84ff"
-  integrity sha1-tUGO8EOd5UJfxJlQQtztFPsqhP8=
 
 please-upgrade-node@^3.2.0:
   version "3.2.0"

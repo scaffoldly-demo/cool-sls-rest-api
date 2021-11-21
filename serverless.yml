@@ -24,6 +24,8 @@ provider:
   apiGateway:
     restApiId: ${env:AWS_REST_API_ID, "0000000000"}
     restApiRootResourceId: ${env:AWS_REST_API_ROOT_RESOURCE_ID, "0000000000"}
+    websocketApiId: ${env:AWS_WEBSOCKET_API_ID, "0000000000"}
+    websocketsApiRouteSelectionExpression: $request.body.action
   tracing:
     lambda: true
   environment:
@@ -62,6 +64,17 @@ functions:
           maximumRecordAgeInSeconds: 600
           arn:
             Fn::GetAtt: [Table, StreamArn]
+
+  websocket-handler:
+    role: arn:${env:AWS_PARTITION, ""}:iam::${env:AWS_ACCOUNT_ID, ""}:role/${self:service}-${opt:stage, "local"}
+    handler: src/websocket.handler
+    events:
+      - websocket:
+          route: $connect
+      - websocket:
+          route: $disconnect
+      - websocket:
+          route: $default
 
 
 resources:
