@@ -6,9 +6,5 @@
 # This file is *safe* to add to source control and will increase the speed of builds
 ---
 - serviceName: auth-sls-rest-api
-<<<<<<< HEAD
   version: 1.0.0-9
-=======
-  version: 1.0.0-8
->>>>>>> 1807f6c739ee997f148505990c48915032485933
 
