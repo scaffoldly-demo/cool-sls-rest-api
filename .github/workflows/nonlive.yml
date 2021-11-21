@@ -1,4 +1,4 @@
-name: "Nonlive Deploy"
+name: 'Nonlive Deploy'
 
 on:
   workflow_dispatch:
@@ -14,12 +14,13 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.NONLIVE_AWS_SECRET_ACCESS_KEY }}
   AWS_REST_API_ID: ${{ secrets.NONLIVE_AWS_REST_API_ID }}
   AWS_REST_API_ROOT_RESOURCE_ID: ${{ secrets.NONLIVE_AWS_REST_API_ROOT_RESOURCE_ID }}
+  AWS_WEBSOCKET_API_ID: ${{ secrets.NONLIVE_AWS_WEBSOCKET_API_ID }}
   NODE_ENV: nonlive
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: >- 
+    if: >-
       !startsWith(github.event.head_commit.message, 'Initial commit') && 
       !startsWith(github.event.head_commit.message, '🤖')
     steps:
