@@ -28,7 +28,7 @@ export const handler = async (
       // DEVNOTE For Don: API Gateway connections keepalive for 10 minutes
 
       // TODO For Don: Save the connection ID + identity
-      return { statusCode: 200, body: 'Connected.' };
+      return { statusCode: 201 };
     }
     case '$disconnect':
       console.log(`Disconnected! Connection ID was ${connectionId}`);
