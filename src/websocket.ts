@@ -15,12 +15,14 @@ export const handler = async (
 
   switch (routeKey) {
     case '$connect': {
-      console.log('!!! checking token');
-      const token = (event.queryStringParameters && event.queryStringParameters.token) || undefined;
-      if (!token) {
-        console.log('!!! token not defined');
-        return { statusCode: 401, body: JSON.stringify({ error: 'Unauthorized' }) };
-      }
+      // console.log('!!! checking token');
+      // const token = (event.queryStringParameters && event.queryStringParameters.token) || undefined;
+      const statusCode =
+        (event.queryStringParameters && event.queryStringParameters.statusCode) || 200;
+      // if (!token) {
+      //   console.log('!!! token not defined');
+      //   return { statusCode: 401, body: JSON.stringify({ error: 'Unauthorized' }) };
+      // }
       // TODO For Don: Check token
 
       console.log(`Connected! Connection ID is ${connectionId}`);
@@ -28,7 +30,7 @@ export const handler = async (
       // DEVNOTE For Don: API Gateway connections keepalive for 10 minutes
 
       // TODO For Don: Save the connection ID + identity
-      return { statusCode: 201 };
+      return { statusCode };
     }
     case '$disconnect':
       console.log(`Disconnected! Connection ID was ${connectionId}`);
