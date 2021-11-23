@@ -33,7 +33,7 @@ export const handler = async (
       // DEVNOTE For Don: API Gateway connections keepalive for 10 minutes
 
       // TODO For Don: Save the connection ID + identity
-      return { statusCode: Number(statusCode) };
+      return { statusCode: Number(statusCode), body: 'Connected.' };
     }
     case '$disconnect':
       console.log(`Disconnected! Connection ID was ${connectionId}`);
@@ -47,6 +47,6 @@ export const handler = async (
       return { statusCode: 200, body: `Got your message: ${body}` };
     }
     default:
-      return { statusCode: 200, body: JSON.stringify({ error: 'Unknown route key' }) };
+      return { statusCode: 200, body: `Unknown route key: ${routeKey}` };
   }
 };
