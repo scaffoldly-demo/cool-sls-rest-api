@@ -101,14 +101,7 @@ export const handler = async (
       const userId = extractUserId(payload);
       console.log('Connected user:', userId);
 
-      // Lambda does not support sending a response as part of the connect operation, so let's send one asynchronously...
-      try {
-        const helper = new WebsocketHelper(connectionId);
-        await helper.sendMessage({ userId, message: `Hello ${userId}!!` });
-      } catch (e) {
-        console.warn('Error sending message during connect', e);
-      }
-
+      // Lambda does not support sending a response as part of the connect operation
       return { statusCode: 200 };
     }
 
@@ -133,9 +126,12 @@ export const handler = async (
       const userId = extractUserId(payload);
       const { body } = event;
 
-      if (body === 'sendme') {
+      if (body === 'test-2way') {
         const helper = new WebsocketHelper(connectionId);
-        await helper.sendMessage({ userId, message: `whaddup` });
+        await helper.sendMessage({
+          userId,
+          message: `This message was sent using websocket helper`,
+        });
       }
 
       // DEVNOTE: Probably send stringify'd JSON and use JSON.parse(body) here
