@@ -1,10 +1,10 @@
 service: ${file(serverless.config.js):serviceName}
 
 frameworkVersion: 2.57.0
-variablesResolutionMode: "20210326"
+variablesResolutionMode: '20210326'
 configValidationMode: off
 disabledDeprecations:
-  - "*"
+  - '*'
 
 plugins:
   - serverless-bundle
@@ -17,7 +17,7 @@ plugins:
 provider:
   name: aws
   runtime: nodejs12.x
-  lambdaHashingVersion: "20201221"
+  lambdaHashingVersion: '20201221'
   cfnRole: arn:${env:AWS_PARTITION, ""}:iam::${env:AWS_ACCOUNT_ID, ""}:role/${self:service}-cloudformation
   stage: ${opt:stage, "local"}
   logRetentionInDays: 1
@@ -67,24 +67,23 @@ functions:
 
   websocket-handler:
     role: arn:${env:AWS_PARTITION, ""}:iam::${env:AWS_ACCOUNT_ID, ""}:role/${self:service}-${opt:stage, "local"}
-    handler: src/websocket.handler
+    handler: src/websocket.asdf
     events:
       - websocket:
           route: $connect
+          routeResponseSelectionExpression: $default
       - websocket:
           route: $disconnect
       - websocket:
           route: $default
 
-
 resources:
   Resources:
     Secret:
       Type: AWS::SecretsManager::Secret
-      Properties: 
+      Properties:
         Name: lambda/${opt:stage, "local"}/${self:service}
-        SecretString: 
-          "{}"
+        SecretString: '{}'
 
     Table:
       Type: AWS::DynamoDB::Table
@@ -120,7 +119,6 @@ resources:
           SSEEnabled: true
         BillingMode: PAY_PER_REQUEST
 
-
 custom:
   serverless-offline:
     useChildProcesses: false
@@ -135,7 +133,6 @@ custom:
       - from: 'public/*'
         to: './'
 
-
   dynamodb:
     stages:
       - local
@@ -145,4 +142,3 @@ custom:
       migrate: true
   serverless-offline-dynamodb-streams:
     endpoint: http://0.0.0.0:8100
-
