@@ -5,11 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "preLaunchTask": "prepare",
+      // "preLaunchTask": "prepare",
       "type": "node",
       "request": "launch",
       "name": "Local Debug",
       "program": "${workspaceRoot}/node_modules/serverless/bin/serverless",
+      "env": { "SLS_DEBUG": "*" },
       "args": ["offline", "start", "--noTimeout"],
       "outFiles": ["${workspaceFolder}/.webpack/**/*.js"],
       "sourceMaps": true,
