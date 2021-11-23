@@ -71,11 +71,11 @@ functions:
     events:
       - websocket:
           route: $connect
-          routeResponseSelectionExpression: $default
       - websocket:
           route: $disconnect
       - websocket:
           route: $default
+          routeResponseSelectionExpression: $default
 
 resources:
   Resources:
