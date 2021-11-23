@@ -103,7 +103,7 @@ export const handler = async (
 
       // Lambda does not support sending a response as part of the connect, so let's send one asynchronously...
       const helper = new WebsocketHelper(connectionId);
-      helper.sendMessage({ userId, message: `Hello ${userId}!!` });
+      await helper.sendMessage({ userId, message: `Hello ${userId}!!` });
 
       return { statusCode: 200 };
     }
