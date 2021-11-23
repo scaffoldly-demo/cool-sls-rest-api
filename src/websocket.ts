@@ -44,7 +44,7 @@ export const handler = async (
       const { body } = event;
       console.log('Message body', body); // DEVNOTE: Probably send stringify'd JSON and use JSON.parse(body) here
 
-      return { body: `Got your message: ${body}` };
+      return { body: JSON.stringify({ default$: `Got your message: ${body}` }) };
     }
     default:
       return { statusCode: 200, body: JSON.stringify({ error: 'Unknown route key' }) };
