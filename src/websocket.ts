@@ -27,6 +27,9 @@ export const handler = async (
 
       console.log(`Connected! Connection ID is ${connectionId}`);
 
+      if (Number(statusCode) === 123) {
+        throw new Error('Test error');
+      }
       // DEVNOTE For Don: API Gateway connections keepalive for 10 minutes
 
       // TODO For Don: Save the connection ID + identity
