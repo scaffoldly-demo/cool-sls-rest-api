@@ -12,7 +12,7 @@ plugins:
   - serverless-dynamodb-local
   # - serverless-offline-dynamodb-streams
   - serverless-plugin-resource-tagging
-  - serverless-offline
+  - '@scaffoldly/serverless-offline'
 
 provider:
   name: aws
