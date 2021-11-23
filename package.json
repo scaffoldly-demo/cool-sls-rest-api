@@ -1,6 +1,6 @@
 {
   "name": "cool-sls-rest-api",
-  "version": "1.0.0-30",
+  "version": "1.0.0-31",
   "license": "UNLICENSED",
   "scripts": {
     "prepare": "./scripts/prepare.sh",
