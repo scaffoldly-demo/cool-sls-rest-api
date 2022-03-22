@@ -7,4 +7,6 @@
 ---
 - serviceName: auth-sls-rest-api
   version: 1.0.0-11
+- serviceName: django-sls-rest-api
+  version: null
 
