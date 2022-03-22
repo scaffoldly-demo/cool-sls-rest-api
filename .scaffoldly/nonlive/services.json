@@ -14,5 +14,12 @@
     "service-slug": "cool",
     "websocket-api-id": "1pobq2nmih",
     "websocket-url": "wss://ws-sly.scaffoldly-demo.scaffoldly.dev/cool"
+  },
+  "django-sls-rest-api": {
+    "api-id": "0ste7vq1w4",
+    "api-resource-id": "31d4w85jcb",
+    "base-url": "https://sly.scaffoldly-demo.scaffoldly.dev/django",
+    "service-name": "django-sls-rest-api",
+    "service-slug": "django"
   }
 }

@@ -1,13 +1,18 @@
 {
   "api-gateway-domain": "sly.scaffoldly-demo.scaffoldly.live",
-  "api-gateway-websocket": true,
+  "api-gateway-websocket": "true",
   "api-gateway-websocket-domain": "ws-sly.scaffoldly-demo.scaffoldly.live",
   "stage-domain": "scaffoldly-demo.scaffoldly.live",
   "subdomain": "sly",
   "subdomain-suffix": "",
   "zone-id": "Z04170591XT0SF528WBST",
+  "api-id": "n56sx3dv43",
+  "api-resource-id": "sha57cpg59",
+  "base-url": "https://sly.scaffoldly-demo.scaffoldly.live/cool",
   "service-name": "cool-sls-rest-api",
   "service-slug": "cool",
+  "websocket-api-id": "2bmtuhuqhk",
+  "websocket-url": "wss://ws-sly.scaffoldly-demo.scaffoldly.live/cool",
   "application-name": "cool-sls-rest-api",
   "organization-name": "scaffoldly-demo"
 }
